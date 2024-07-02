@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 ---
 
 Creating custom GPTs with the latest version of GPT4o `gpt-4o-2024-05-13` can be a frustrating, here are some thoughts I shared with colleagues who were getting some odd behaviours
-
+<!--more-->
 When you need your GPT to interact with files you have given it, The GPT will call python functions in its code interpreter. Like many  developers, the code interpreter seems to take some shortcuts. Shortcuts taken by code interpreter can have some serious downstream implications to your GPTs ability to reason that you should be aware of.
 
 ## Files
