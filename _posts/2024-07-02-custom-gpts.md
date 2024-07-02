@@ -2,7 +2,7 @@
 layout: post
 title: "Custom GPTs"
 author: "Tim"
-tags: Tutorial, GPT, Prompting
+tags: Tutorial GPT Prompting
 excerpt_separator: <!--more-->
 ---
 
