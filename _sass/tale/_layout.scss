@@ -61,6 +61,8 @@ footer,
     .twitter-icon {
       display: flex;
       align-items: center;
+      position: relative;
+      top:6px;
 
       svg {
         width: 24px;
