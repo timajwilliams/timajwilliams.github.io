@@ -58,6 +58,25 @@ footer,
     &:focus {
       opacity: 1;
     }
+    .twitter-icon {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+          transition: fill 0.3s ease;
+        }
+      }
+
+      &:hover {
+        svg path {
+          fill: #0c7abf; // Darker blue on hover
+        }
+      }
+    }
   }
 
   a {
