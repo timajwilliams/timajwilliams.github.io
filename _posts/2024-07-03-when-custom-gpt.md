@@ -42,7 +42,7 @@ At some point, creating a custom GPT may be more hassle than you need but it doe
 
 ## Best Practices
 
-Regardless of which method, keep these top of mind:
+Regardless of which method you choose, keep these top of mind:
 
 - **Start Small**: Begin with a well-defined use case and expand from there.
 - **Monitor Performance**: Keep an eye on the quality, is it still doing what you want/need?
