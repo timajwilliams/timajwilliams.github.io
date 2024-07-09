@@ -10,6 +10,13 @@ $blue: #4a9ae1 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
 $code-color: #bf616a !default;
 
+$background-light: #ffffff;
+$background-dark: #343434;
+$text-light: #000000;
+$text-dark: #ffffff;
+
+$mode: light; // Default mode
+
 // Fonts
 $serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
 $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
