@@ -14,9 +14,10 @@ layout: default
     {% if page.date %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <br>
-      <p>{% include reading_time.html %}</p>
+      
     {% endif %}
+    <br>
+      <span>{% include reading_time.html %}</span>
   </div>
 
   {% if page.tags %}
