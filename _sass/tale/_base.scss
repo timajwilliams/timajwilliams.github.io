@@ -82,6 +82,8 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 0.5rem;
 }
 
 .theme-switch {
@@ -119,7 +121,7 @@ td {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #656666;
 }
 
 input:checked + .slider:before {
