@@ -6,11 +6,13 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
+  --default-shade: $default-shade;
 }
 
 [data-theme="dark"] {
   --background-color: #343434;;
   --text-color: #ffffff;
+  --default-shade: $grey-2;
 }
 
 html,
@@ -41,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $default-shade;
+  color: var(--default-shade);
   font-family: $sans-serif;
   line-height: normal;
 }
