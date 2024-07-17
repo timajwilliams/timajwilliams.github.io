@@ -20,5 +20,6 @@ Looking back over the last 5 years, many have tried different ways to incorporat
 | Second Generation | Generative encoder-decoder models (akin to T5) | Unification of captioning and question-answering tasks via generative encoder-decoder modeling, leveraging progress in generative language models. | Combines captioning and QA tasks, often backed by generative language model advancements.  |
 | Scaled-Up Models  | Flamingo, BLIP-2, PaLI                         | Further scaling of second-generation models.                                                                                                       | Enhanced capabilities and performance through scaling up.                                  |
 | Recent Advances   | Gemini, GPT-4, Moondream                       | Introduction of “instruction tuning” to make raw models more user-friendly, along with systematic studies to identify important factors in VLMs.   | Instruction tuning for improved usability, systematic studies on VLM effectiveness.        |
-|                   |                                                |                                                                       
+
+
 
