@@ -7,14 +7,22 @@
   --background-color: #ffffff;
   --text-color: #000000;
   --default-shade: $default-shade;
-  --table-border-color: #444444; 
+  --table-bg: #ffffff;
+  --table-border: #e0e0e0;
+  --table-header-bg: #f8f9fa;
+  --table-header-color: #333333;
+  --table-cell-color: #333333;
 }
 
 [data-theme="dark"] {
   --background-color: #343434;
   --text-color: #ffffff;
   --default-shade: $grey-2;
-  --table-border-color: #ffffff; 
+  --table-bg: #2c2c2c;
+  --table-border: #444444;
+  --table-header-bg: #3a3a3a;
+  --table-header-color: #ffffff;
+  --table-cell-color: #e0e0e0; 
 }
 
 html,
@@ -158,16 +166,78 @@ input:checked + .slider .moon {
 
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--table-border);
+  border-radius: 8px;
+  overflow: hidden;
   margin-bottom: 1rem;
-}
-
-table, th, td {
-  border: 1px solid var(--table-border-color);
+  background-color: var(--table-bg);
 }
 
 th, td {
-  padding: 0.5rem;
+  padding: 12px 15px;
   text-align: left;
+  border-bottom: 1px solid var(--table-border);
+}
+
+th {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}
+
+td {
+  color: var(--table-cell-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr {
+    border: 1px solid var(--table-border);
+    margin-bottom: 10px;
+  }
+  
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
 }
