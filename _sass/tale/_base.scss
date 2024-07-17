@@ -17,7 +17,7 @@
 [data-theme="dark"] {
   --background-color: #343434;
   --text-color: #ffffff;
-  --default-shade: $grey-2;
+  --default-shade: $text-dark;
   --table-bg: #2c2c2c;
   --table-border: #444444;
   --table-header-bg: #3a3a3a;
@@ -186,7 +186,6 @@ th {
   background-color: var(--table-header-bg);
   color: var(--table-header-color);
   font-weight: bold;
-  text-transform: uppercase;
   font-size: 0.9em;
   letter-spacing: 0.05em;
 }
