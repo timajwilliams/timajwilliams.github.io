@@ -7,12 +7,14 @@
   --background-color: #ffffff;
   --text-color: #000000;
   --default-shade: $default-shade;
+  --table-border-color: #444444; 
 }
 
 [data-theme="dark"] {
-  --background-color: #343434;;
+  --background-color: #343434;
   --text-color: #ffffff;
   --default-shade: $grey-2;
+  --table-border-color: #ffffff; 
 }
 
 html,
@@ -152,4 +154,20 @@ input:checked + .slider .sun {
 
 input:checked + .slider .moon {
   display: block;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  border: 1px solid var(--table-border-color);
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
 }
