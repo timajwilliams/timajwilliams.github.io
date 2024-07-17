@@ -4,7 +4,7 @@ title: "PaliGemma"
 author: "Tim"
 tags: Paper Multimodal Image Text
 excerpt_separator: <!--more-->
-hidden: true
+hidden: false
 ---
 
 A treasure trove of findings in the multimodel text and image space
