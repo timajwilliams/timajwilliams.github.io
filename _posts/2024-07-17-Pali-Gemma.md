@@ -4,6 +4,7 @@ title: "PaliGemma"
 author: "Tim"
 tags: Paper Multimodal Image Text
 excerpt_separator: <!--more-->
+mermaid: true
 hidden: false
 ---
 
