@@ -24,9 +24,9 @@ Looking back over the last 5 years, many have tried different ways to incorporat
 
 ## The Google Journey
 
-The Google team go through the progress they have made in the space, with explicit reference to the size and architectures used aolng the way
+The Google team go through the progress they have made in the space, with explicit reference to the size and architectures used along the way
 
-<div class="mermaid">
+<div class="mermaid" style="float: right; margin-left: 20px;">
 %%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'monospace'}}}%%
 graph TD
 A[<strong>PaLI</strong><br><font size=2>17B parameters<br>Image: ViT-e 4B<br>Text: mT5-XXL 13B<br> </font>]
