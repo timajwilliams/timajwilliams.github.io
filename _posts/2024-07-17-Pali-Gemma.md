@@ -26,7 +26,7 @@ Looking back over the last 5 years, many have tried different ways to incorporat
 
 The Google team go through the progress they have made in the space, with explicit reference to the size and architectures used aolng the way
 
-{% mermaid %}
+<div class="mermaid">
 graph TD;
 
 A[<strong>PaLI</strong><br><font size=2>17B parameters<br>Image: ViT-e 4B<br>Text: mT5-XXL 13B<br> </font>]
@@ -51,5 +51,5 @@ style C fill:#fd9b32,stroke:#333,stroke-width:2px
 style D fill:#e56be5,stroke:#333,stroke-width:2px
 
 style E fill:#5dedeb,stroke:#333,stroke-width:2px
-{% endmermaid %}
+</div>
 
