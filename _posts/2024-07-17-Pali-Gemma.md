@@ -27,7 +27,7 @@ Looking back over the last 5 years, many have tried different ways to incorporat
 The Google team go through the progress they have made in the space, with explicit reference to the size and architectures used aolng the way
 
 ```mermaid
-graph TD
+graph TD;
 
 A[<strong>PaLI</strong><br><font size=2>17B parameters<br>Image: ViT-e 4B<br>Text: mT5-XXL 13B<br> </font>]
 
@@ -40,7 +40,6 @@ B --> D[<strong>PaLI-3</strong><br><font size=2>5B parameters<br>Image: 2B ViT-G
 C --> D
 
 D --> E[<strong>PaLI-Gemma</strong><br><font size=2> < 3B parameters<br>Image: 400M SigLIP<br>Text: 2B Gemma<br> </font>]
-
   
 
 style A fill:#69e375,stroke:#333,stroke-width:2px
