@@ -16,6 +16,13 @@
   <!-- RSS -->
   {% feed_meta %}
 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.3/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({ startOnLoad: true });
+    });
+  </script>
+
   <!-- Google Analytics-->
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}

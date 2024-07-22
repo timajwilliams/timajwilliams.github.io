@@ -29,28 +29,17 @@ The Google team go through the progress they have made in the space, with explic
 <div class="mermaid">
 %%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'monospace'}}}%%
 graph TD
-
 A[<strong>PaLI</strong><br><font size=2>17B parameters<br>Image: ViT-e 4B<br>Text: mT5-XXL 13B<br> </font>]
-
 --> B[<strong>PaLI-X</strong><br><font size=2>54B parameters<br>Image: ViT-22B<br>Text: 32B UL2<br> </font>]
-
 A --> C[<strong>PaLM-E</strong><br><font size=2>540B+ parameters<br>Image: ViT-22B<br>Text: 540B PaLM<br> </font>]
-
 B --> D[<strong>PaLI-3</strong><br><font size=2>5B parameters<br>Image: 2B ViT-G/14<br>Text: 3B UL2<br> </font>]
-
 C --> D
-
 D --> E[<strong>PaLI-Gemma</strong><br><font size=2> < 3B parameters<br>Image: 400M SigLIP<br>Text: 2B Gemma<br> </font>]
-  
 
 style A fill:#69e375,stroke:#333,stroke-width:2px
-
 style B fill:#fd9b32,stroke:#333,stroke-width:2px
-
 style C fill:#fd9b32,stroke:#333,stroke-width:2px
-
 style D fill:#e56be5,stroke:#333,stroke-width:2px
-
 style E fill:#5dedeb,stroke:#333,stroke-width:2px
 </div>
 
