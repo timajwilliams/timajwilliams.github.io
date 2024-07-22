@@ -43,3 +43,7 @@ style D fill:#e56be5,stroke:#333,stroke-width:2px
 style E fill:#5dedeb,stroke:#333,stroke-width:2px
 </div>
 
+## PaLI-Gemma
+PaLI-Gemma is the latest model in Google's pathway of multimodal advancements. It features fewer than 3 billion parameters, with a SigLIP image encoder (400M) and Gemma text model (2B). This model stands out for its efficiency and performance across various tasks.
+
+The Models are trained to be a versatile and broadly knowledgeable base model that is effective to transfer, the base models need to be transferred to serve their intended final purpose. The tasks that the models are intended to transfer well on are: Image Classification, Captioning, Visual QA, Dialogue. There is scope for further tasks which are not necessarilty text output (think detection, instance segmentation, panoptic segmentation, depth prediction, colorization..) but they are not developed here.
