@@ -47,3 +47,56 @@ style E fill:#5dedeb,stroke:#333,stroke-width:2px
 PaLI-Gemma is the latest model in Google's pathway of multimodal advancements. It features fewer than 3 billion parameters, with a SigLIP image encoder (400M) and Gemma text model (2B). This model stands out for its efficiency and performance across various tasks.
 
 The Models are trained to be a versatile and broadly knowledgeable base model that is effective to transfer, the base models need to be transferred to serve their intended final purpose. The tasks that the models are intended to transfer well on are: Image Classification, Captioning, Visual QA, Dialogue. There is scope for further tasks which are not necessarilty text output (think detection, instance segmentation, panoptic segmentation, depth prediction, colorization..) but they are not developed here.
+
+# Training In Stages
+
+The training of PaliGemma follows the same steps as previous PaLI models, with only small modifications. Training consists of several stages
+
+• Stage0: Unimodal pretraining - we use existing off-the-shelf components.
+• Stage1: Multimodal pretraining - long pretraining on a carefully chosen mixture of
+multimodal tasks. Notably, nothing is frozen.
+• Stage2: Resolution increase - short continued pretraining at higher resolution.
+• Stage3: Transfer - turn the base model into
+a task-specific specialist.
+
+The separation of training into these phases is key: 
+## Stage 0 
+Takes off the shelf single modality Models: 
+    - SigLIP for the Image encoder 
+    - Gemma 2B for the Language Model
+
+### Tokens
+- The image is passed through the image encoder, which turns it into a sequence of N<sub>img</sub> tokens.
+- The text is converted into N<sub>txt</sub>  tokens using Gemma’s SentencePiece tokenizer
+- The text tokens are embedded with Gemma’s vocabulary embedding layer.
+- The image tokens are projected with the (zero initialized) linear projection.
+- The sequence of input tokens to the decoder is created.
+
+## Stage 1
+Combines unimodal models and trains them on diverse vision-language tasks, aiming to create a versatile base model rather than just aligning modalities. Unlike common practice, PaliGemma doesn't freeze the image encoder during this stage, allowing it to learn spatial and relational understanding. To mitigate potential degradation, a slow linear warm-up is used for the image encoder's learning rate. The model is trained at 224px resolution with 256 image tokens and 128 text tokens for 1 billion examples, ensuring a broad coverage of visual knowledge, concepts, cultures, and languages.
+
+
+## Stage 2
+Focuses on increasing image resolution to enhance performance on tasks requiring finer visual details. The model is trained on two additional checkpoints: 448x448 and 896x896 pixel resolutions. This stage uses fewer examples but increases information density, with 50M examples for 448px and 10M for 896px. It maintains the same task mixture as Stage 1 but emphasizes high-resolution tasks and extends text sequence length to 512 tokens. This allows the model to handle more complex visual tasks like detailed object detection, segmentation, and text reading in images, addressing the growing recognition of resolution importance in vision-language models.
+
+## Stage 3
+Focuses on transfer learning, adapting the pre-trained model (available in 224px, 448px, and 896px resolutions) to specific tasks or use cases. This stage involves fine-tuning the model for various applications, from specialized tasks like COCO Captions or Video Captioning to more general instruction or chat tuning. The transfer process uses a unified recipe with adjustable hyper-parameters, including resolution, epochs, learning rate, and dropout. PaliGemma demonstrates versatility by adapting to tasks involving multiple images or video frames, encoding them separately and concatenating the tokens. This stage showcases the model's effectiveness across academic benchmarks and its potential for broader applications beyond standard tasks.
+
+### Fine Tuning Stage 3 Recipe
+In decreasing order of importance
+
+| Parameter          | Values                         |
+| ------------------ | ------------------------------ |
+| Resolution         | **224**, 448, 896              |
+| Epochs             | **1, 3, 10**, 30, 100          |
+| Learning-rate      | 3e-5, **1e-5**, 3e-6           |
+| Label-smoothing    | **0.0**, 0.1, 0.3              |
+| Dropout in the LLM | **0.0**, 0.1, 0.3              |
+| Weight decay       | **0.0** or 0.1 × learning-rate |
+| Freeze ViT         | **false**, true                |
+| Beam-search        | May benefit captioning         |
+
+Recommended initial attempt value in bold.
+
+# Ablations
+The huge Value in this paper is the density of information provided in the ablations, here is where the treasure lies
