@@ -11,7 +11,7 @@ hidden: false
 A treasure trove of findings in the multimodel text and image space
 <!--more-->
 
-This paper lays out in quite some detail what works when it comes to training the latest generation of multimodal texk and image models.
+This paper lays out in quite some detail what works when it comes to training the latest generation of multimodal text and image models.
 
 Looking back over the last 5 years, many have tried different ways to incorporate the two modalities to enable a model that can deal in both language and images in either the same representation space, or the marrying of specialist models to bridge the gap. The authors sum up the progression:
 
@@ -52,12 +52,10 @@ The Models are trained to be a versatile and broadly knowledgeable base model th
 
 The training of PaliGemma follows the same steps as previous PaLI models, with only small modifications. Training consists of several stages
 
-• Stage0: Unimodal pretraining - we use existing off-the-shelf components.
-• Stage1: Multimodal pretraining - long pretraining on a carefully chosen mixture of
-multimodal tasks. Notably, nothing is frozen.
-• Stage2: Resolution increase - short continued pretraining at higher resolution.
-• Stage3: Transfer - turn the base model into
-a task-specific specialist.
+- Stage0: Unimodal pretraining - we use existing off-the-shelf components.
+- Stage1: Multimodal pretraining - long pretraining on a carefully chosen mixture of multimodal tasks. Notably, nothing is frozen.
+- Stage2: Resolution increase - short continued pretraining at higher resolution.
+- Stage3: Transfer - turn the base model into a task-specific specialist.
 
 The separation of training into these phases is key: 
 ## Stage 0 
