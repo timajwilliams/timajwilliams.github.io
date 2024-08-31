@@ -25,7 +25,7 @@
     letter-spacing: .5px;
   }
   &-title {
-    color: $default-shade;
+    color: var(--heading-color);
     display: block;
     font-family: $sans-serif;
     font-size: 2rem;
