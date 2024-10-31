@@ -40,44 +40,44 @@ Prompt engineer at Klarna discussed the process they use when creating the syste
 ## Sam's AMA Session
 
 The day concluded with a remote AMA with Sam Altman, who spoke candidly whilst sidestepping gracefully round some of the more tough questions clearly aiming to catch a soundbite.
-​
+
 ### General Questions
-​
-* OpenAI has no plans to steamroller products built on top of their APIs \- the cases where that has happened so far have been where companies have built around deficiencies in weaker models. Assume that models will keep improving, and build to take advantage of this otherwise your solution can only ever be short lived.  
-* Anyone starting a company now should really be looking to apply AI to a specific vertical \- where it can add value to an established niche. Just aim to be the best!
-​
+
+* OpenAI has no plans to steamroller products built on top of their APIs - the cases where that has happened so far have been where companies have built around deficiencies in weaker models. Assume that models will keep improving, and build to take advantage of this otherwise your solution can only ever be short lived.
+* Anyone starting a company now should really be looking to apply AI to a specific vertical - where it can add value to an established niche. Just aim to be the best!
+
 ### Future Outlook
-​
-* Emphasis on reasoning capabilities being the frontier  
-* 2025 push toward next-gen systems  
-* Focus on unlocking economic value   
-* Shift from thinking about individual models to thinking about systems  
+
+* Emphasis on reasoning capabilities being the frontier
+* 2025 push toward next-gen systems
+* Focus on unlocking economic value
+* Shift from thinking about individual models to thinking about systems
 * Models are depreciating assets, They do pay for themselves in usage, but have a shelf life. Compounding team knowledge value in the research and engineering process
-​
+
 ### Leadership Perspectives
-​
-* Balance between day-to-day and long-term planning  
-* Focus on 10x improvements over 10% gains  
-* Value of experience in infrastructure (as answer to question on employing the over 30s)  
-* Set a high talent bar regardless of age  
-* Importance of innovation and unlocking personal potential \- This will be the focus of his book if he ever gets there
-​
+
+* Balance between day-to-day and long-term planning
+* Focus on 10x improvements over 10% gains
+* Value of experience in infrastructure (as answer to question on employing the over 30s)
+* Set a high talent bar regardless of age
+* Importance of innovation and unlocking personal potential - This will be the focus of his book if he ever gets there
+
 ### Agent Development
-​
-* Definition: Long duration tasks with minimal supervision  
-* Evolution toward “Smart Senior Coworker” collaboration model  
-* Q1 2025 expected capability improvements  
-* Need for better terminology than “Agentic”  
-* Practical applications like massive parallelization  
-* Agents are still narrowly considered e.g. why just 1 agent calling 1 restaurant to make a booking when 300 can call 300 restaurants and offer the user choice \- will be ok when restaurants have AI applied to answer calls\!
-​
+
+* Definition: Long duration tasks with minimal supervision
+* Evolution toward "Smart Senior Coworker" collaboration model
+* Q1 2025 expected capability improvements
+* Need for better terminology than "Agentic"
+* Practical applications like massive parallelization
+* Agents are still narrowly considered e.g. why just 1 agent calling 1 restaurant to make a booking when 300 can call 300 restaurants and offer the user choice - will be ok when restaurants have AI applied to answer calls!
+
 ### Worries
-​
-* Ensuring that research, engineering and product roadmaps can be run effectively in parallel to intersect at the right time in the future.  
-* Bets on next products \- the 51:49 decisions that reach him *because* they are the hard decisions that filter up  
+
+* Ensuring that research, engineering and product roadmaps can be run effectively in parallel to intersect at the right time in the future
+* Bets on next products - the 51:49 decisions that reach him because they are the hard decisions that filter up
 * Global semiconductor supply in the top 10% of worries
-​
+
 ### Praise
-​
-* Respect for the Cursor team and the developer tool they are building  
-* Arc browser getting a shoutout.
+
+* Respect for the Cursor team and the developer tool they are building
+* Arc browser getting a shoutout
