@@ -25,11 +25,11 @@ There were presentations on how structured outputs were solved through research 
 ​
 Great 5-10 minute presentations from startups like [dust.tt](https://www.dust.tt/) and [cosine.sh](https://www.cosine.sh/) and how they are building effective platforms on top of the API:
 ​
-#### dust.tt:
+#### [dust.tt](https://www.dust.tt/)
 ​
 Conversational layer on top of all data sources: demo connecting google sheets, csv and snowflake for BI use cases.
 ​
-#### cosine.sh
+#### [cosine.sh](https://www.cosine.sh/)
 ​
 Text input for agentic code modification inside a repo. Specific fine tuning process used to create training data to distil a model for the very specific git patch activity that they wanted
 ​
