@@ -44,7 +44,7 @@ The day concluded with a remote AMA with Sam Altman, who spoke candidly whilst s
 ### General Questions
 ​
 * OpenAI has no plans to steamroller products built on top of their APIs \- the cases where that has happened so far have been where companies have built around deficiencies in weaker models. Assume that models will keep improving, and build to take advantage of this otherwise your solution can only ever be short lived.  
-* Anyone starting a company now should really be looking to apply AI to a specific vertical \- where it can add value to an established niche. Just aim to be the best\!
+* Anyone starting a company now should really be looking to apply AI to a specific vertical \- where it can add value to an established niche. Just aim to be the best!
 ​
 ### Future Outlook
 ​
