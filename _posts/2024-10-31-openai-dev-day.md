@@ -35,11 +35,11 @@ Text input for agentic code modification inside a repo. Specific fine tuning pro
 ​
 #### Klarna
 ​
-Prompt engineer at Klarna discussed the process they use when creating the system prompts for their LLM use cases, specific application to the user history chat which allows order query and refunds. Echo Zhao will share the deck with me.
+Prompt engineer at Klarna discussed the process they use when creating the system prompts for their LLM use cases, specific application to the user history chat which allows order query and refunds.
 ​
+## Sam's AMA Session
+
 The day concluded with a remote AMA with Sam Altman, who spoke candidly whilst sidestepping gracefully round some of the more tough questions clearly aiming to catch a soundbite.
-​
-## Sam’s View
 ​
 ### General Questions
 ​
