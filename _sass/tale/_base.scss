@@ -6,7 +6,8 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
-  --default-shade: $default-shade;
+  --default-color: #555;
+  --default-shade: #{$default-shade};
   --heading-color: #{$default-shade};
   --table-bg: #ffffff;
   --table-border: #e0e0e0;
@@ -17,15 +18,15 @@
 
 [data-theme="dark"] {
   --background-color: #343434;
-  --heading-color: #e0e0e0; // Lighter shade for better contrast
-  --text-color: #f0f0f0;    // Lighter shade for better readability
+  --heading-color: #e0e0e0;
+  --text-color: #f0f0f0;
   --default-color: #cccccc;
-  --default-shade: $text-dark;
+  --default-shade: #{$text-dark};
   --table-bg: #2c2c2c;
   --table-border: #444444;
   --table-header-bg: #3a3a3a;
   --table-header-color: #ffffff;
-  --table-cell-color: #e0e0e0; 
+  --table-cell-color: #e0e0e0;
 }
 
 
