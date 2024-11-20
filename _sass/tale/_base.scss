@@ -17,8 +17,9 @@
 
 [data-theme="dark"] {
   --background-color: #343434;
-  --heading-color: #ffffff;
-  --text-color: #ffffff;
+  --heading-color: #e0e0e0; // Lighter shade for better contrast
+  --text-color: #f0f0f0;    // Lighter shade for better readability
+  --default-color: #cccccc;
   --default-shade: $text-dark;
   --table-bg: #2c2c2c;
   --table-border: #444444;
@@ -26,6 +27,7 @@
   --table-header-color: #ffffff;
   --table-cell-color: #e0e0e0; 
 }
+
 
 html,
 body {
