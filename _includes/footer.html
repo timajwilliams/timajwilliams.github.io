@@ -4,6 +4,7 @@
   </span>
 </footer>
 <script src="{{ "/assets/js/theme-toggle.js" | relative_url }}" /></script>
+<script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
 <script>
   function getRandomColor() {
       const colors = Array.from({length: 10}, (_, i) => 
@@ -23,7 +24,28 @@
       tagIcons.forEach(icon => {
           icon.style.stroke = getRandomColor();
       });
+
+    
   }
+  document.addEventListener('DOMContentLoaded', () => {
+  // Updated selector to target h1s that don't have post-title class
+  const headings = document.querySelectorAll('.post h1:not(.post-title), .post h2, .post h3, .post h4, .post h5, .post h6');
+  headings.forEach(heading => {
+    // Wrap the text content in a span
+    const textContent = heading.textContent;
+    heading.innerHTML = `<span>${textContent}</span>`;
+    
+    // Apply annotation to the span instead of the heading
+    const annotation = RoughNotation.annotate(heading.querySelector('span'), {
+      type: 'underline',
+      color: getRandomColor(),
+      padding: 2,
+      strokeWidth: 3,
+      animate: false
+    });
+    annotation.show();
+  });
+});
 
   document.addEventListener('DOMContentLoaded', applyRandomColors);
 </script>
