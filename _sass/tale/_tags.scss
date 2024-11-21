@@ -1,7 +1,7 @@
 .tags {
   &-header {
     &-title {
-      color: $default-shade;
+      color: var(--default-shade);
       font-family: $sans-serif;
       font-size: 4rem;
       margin: 1rem 0;
@@ -9,7 +9,7 @@
     }
 
     &-line {
-      border-top: 0.4rem solid $default-shade;
+      border-top: 0.4rem solid var(--default-shade);
       display: block;
       margin: 0 auto 3rem;
       width: 4rem;
@@ -24,11 +24,10 @@
       display: inline-block;
       margin: 0 0.1rem 0.2rem;
       padding: 0.2rem 0.5rem;
-      background: rgba(0, 0, 0, 0.05);
+      background: var(--tag-color);
       border-radius: 5px;
       color: $default-color;
       text-decoration: none;
-
       &:hover,
       &:active {
         background: rgba(0, 0, 0, 0.1);
