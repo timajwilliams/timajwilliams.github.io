@@ -8,7 +8,7 @@
     padding: 2rem 0;
     &:hover .catalogue-line,
     &:focus .catalogue-line {
-      width: 5rem;
+      width: 10rem;
     }
     &:last-child {
       border: 0;
@@ -36,7 +36,7 @@
     @include transition(all .3s ease-out);
     border-top: .2rem solid;
     display: block;
-    width: 2rem;
+    width: 6rem;
   }
   
   // New styles for color alternation

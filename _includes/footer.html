@@ -6,14 +6,22 @@
 <script src="{{ "/assets/js/theme-toggle.js" | relative_url }}" /></script>
 <script>
   function getRandomColor() {
-      const colors = ['#69e375', '#fd9b32', '#e56be5', '#5dedeb','#8A2BE2','#FFF44F','#008080','#FF7F50','#4169E1'];
+      const colors = Array.from({length: 10}, (_, i) => 
+          getComputedStyle(document.documentElement).getPropertyValue(`--color-${i + 1}`).trim()
+      );
       return colors[Math.floor(Math.random() * colors.length)];
   }
 
   function applyRandomColors() {
-      const lines = document.querySelectorAll('.post-line');
+      const lines = document.querySelectorAll('[class$="-line"]');
       lines.forEach(line => {
           line.style.borderTopColor = getRandomColor();
+      });
+
+      // Match SVGs within tags-item elements
+      const tagIcons = document.querySelectorAll('.tags-item svg');
+      tagIcons.forEach(icon => {
+          icon.style.stroke = getRandomColor();
       });
   }
 

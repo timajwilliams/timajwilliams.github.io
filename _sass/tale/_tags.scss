@@ -9,10 +9,10 @@
     }
 
     &-line {
-      border-top: 0.4rem solid var(--default-shade);
+      border-top: 0.4rem solid $default-shade;
       display: block;
       margin: 0 auto 3rem;
-      width: 4rem;
+      width: 10rem;
     }
   }
 

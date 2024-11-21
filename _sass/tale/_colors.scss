@@ -8,6 +8,7 @@ $color-6: #FFF44F;
 $color-7: #008080;
 $color-8: #FF7F50;
 $color-9: #4169E1;
+$color-10: #CCFF00;
 
 // Light shades of original colors
 $color-1-light: #a5eead;
@@ -19,6 +20,7 @@ $color-6-light: #fff9a3;
 $color-7-light: #40a0a0;
 $color-8-light: #ffb399;
 $color-9-light: #819aea;
+$color-10-light: #e5ff80;
 
 $lime-green: $color-1;
 $lime-green-light: $color-1-light;
@@ -38,3 +40,19 @@ $muted-coral: $color-8;
 $muted-coral-light: $color-8-light;
 $electric-blue: $color-9;
 $electric-blue-light: $color-9-light;
+$neon-yellow: $color-10;
+$neon-yellow-light: $color-10-light;
+
+
+:root {
+    --color-1: #{$color-1};
+    --color-2: #{$color-2};
+    --color-3: #{$color-3};
+    --color-4: #{$color-4};
+    --color-5: #{$color-5};
+    --color-6: #{$color-6};
+    --color-7: #{$color-7};
+    --color-8: #{$color-8};
+    --color-9: #{$color-9};
+    --color-10: #{$color-10};
+  }
