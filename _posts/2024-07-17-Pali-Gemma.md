@@ -99,8 +99,6 @@ Recommended initial attempt value in bold.
 # Ablations
 The huge Value in this paper is the density of information provided in the ablations, here is where the treasure lies
 
-<p>Key observations from ablation studies include:</p>
-
 <ol>
     <li>Prefix-LM with task-prefix supervision on suffix tokens is effective for VLM pretraining.</li>
     <li>New token initialization with small Gaussian noise performs better than matching pretrained embeddings' average.</li>
