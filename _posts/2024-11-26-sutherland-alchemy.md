@@ -13,7 +13,7 @@ The Lessons of Alchemy by Rory Sutherland
 
 # The Lessons of Alchemy by Rory Sutherland
 
-Rory Sutherland’s Alchemy is one of those fun books that you pick up every now and then that makes you stop and think 'duh' of course. The book helps you to challenge the basic assumptions we hold about logic, decision-making, and human behavior framed from the perspective of an advertising executive. It’s call to arms for irrationality and an exploration of the advertising magic that emerges when we stop trying to explain everything through rational thought.
+[Rory Sutherland’s Alchemy](https://www.amazon.com/dp/B01F1HOAWA) is one of those fun books that you pick up every now and then that makes you stop and think 'duh' of course. The book helps you to challenge the basic assumptions we hold about logic, decision-making, and human behavior framed from the perspective of an advertising executive. It’s call to arms for irrationality and an exploration of the advertising magic that emerges when we stop trying to explain everything through rational thought.
 
 Rory, an executive at the advertising agency Ogilvy, started appearing in the short clips on my instagram feed. His quick soundbite friendly takes from interviews and presentations were enough to capture my attention and want to read on. The Algorithm clearly knows me well enough! Alchemy is a collection of short chapters that read exactly as he speaks.   
 
