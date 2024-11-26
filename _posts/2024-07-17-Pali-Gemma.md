@@ -99,23 +99,22 @@ Recommended initial attempt value in bold.
 # Ablations
 The huge Value in this paper is the density of information provided in the ablations, here is where the treasure lies
 
+<p>Key observations from ablation studies include:</p>
 
-    <p>Key observations from ablation studies include:</p>
-
-    <ol>
-        <li>Prefix-LM with task-prefix supervision on suffix tokens is effective for VLM pretraining.</li>
-        <li>New token initialization with small Gaussian noise performs better than matching pretrained embeddings' average.</li>
-        <li>Freezing different parts during pretraining impacts performance differently:
-            <ul>
-                <li>Not freezing any part yields the best results.</li>
-                <li>Freezing the language model significantly hurts performance.</li>
-            </ul>
-        </li>
-        <li>Linear connectors outperform MLP connectors slightly.</li>
-        <li>Using a SigLIP image encoder is more sample-efficient than raw image patches.</li>
-        <li>Higher resolution generally improves performance due to increased information content and model capacity.</li>
-        <li>Separate checkpoints for different resolutions are recommended over user-specified resolutions alone.</li>
-        <li>Stage-specific mixture re-weighting helps slightly but isn't crucial for base models intended for fine-tuning.</li>
-        <li>Model stability shows that most tasks can achieve near full-data scores even with limited examples (e.g., within 10% using only 4k examples).</li>
-        <li>Annotations in images work as well as textual prompts for indicating specific elements to be captioned or analyzed.</li>
-    </ol>
+<ol>
+    <li>Prefix-LM with task-prefix supervision on suffix tokens is effective for VLM pretraining.</li>
+    <li>New token initialization with small Gaussian noise performs better than matching pretrained embeddings' average.</li>
+    <li>Freezing different parts during pretraining impacts performance differently:
+        <ul>
+            <li>Not freezing any part yields the best results.</li>
+            <li>Freezing the language model significantly hurts performance.</li>
+        </ul>
+    </li>
+    <li>Linear connectors outperform MLP connectors slightly.</li>
+    <li>Using a SigLIP image encoder is more sample-efficient than raw image patches.</li>
+    <li>Higher resolution generally improves performance due to increased information content and model capacity.</li>
+    <li>Separate checkpoints for different resolutions are recommended over user-specified resolutions alone.</li>
+    <li>Stage-specific mixture re-weighting helps slightly but isn't crucial for base models intended for fine-tuning.</li>
+    <li>Model stability shows that most tasks can achieve near full-data scores even with limited examples (e.g., within 10% using only 4k examples).</li>
+    <li>Annotations in images work as well as textual prompts for indicating specific elements to be captioned or analyzed.</li>
+</ol>
