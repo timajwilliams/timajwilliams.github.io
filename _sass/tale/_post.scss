@@ -36,10 +36,24 @@
   a:hover {
     text-decoration: underline;
   }
-
   img {
-    margin: 0 auto 0.5rem;
+    display: block;
+    margin: 0 0 1rem;
+    max-width: 100%;
   }
+  
+  .img-left {
+    float: left;
+    margin: 0.5rem 1rem 1rem 0;
+    max-width: 60%;
+  }
+  
+  .img-right {
+    float: right;
+    margin: 0.5rem 0 1rem 1rem;
+    max-width: 60%;
+  }
+  
 
   img + em {
     color: $default-tint;
@@ -64,6 +78,9 @@
   
   &-tags {
     margin: 15px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    clear: both;
   }
 
 }
