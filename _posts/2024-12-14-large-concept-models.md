@@ -6,7 +6,7 @@ tags: Paper Multimodal Image Text Diffusion Concept
 excerpt_separator: <!--more-->
 hidden: false
 ---
-LLMs, but thinking in concepts, not just word by word
+LLMs thinking in concepts, not just word by word
 <!--more-->
 # Large Concept Models - Meta
 
