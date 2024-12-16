@@ -18,9 +18,9 @@ The paper is really well worth digging into, because they really throw the kitch
 
 ![treasure map illustration](/assets/images/treasure-map.webp){: .img-right}
 
-Imagine you're a language model stranded on a desert island with a treasure map. 
+Imagine you're a language model stranded on a desert island looking for treasure. 
 
-Token-based Large Language Models (LLMs) would approach this problem by taking each step rigidly, one at a time—placing one foot in front of the other and hoping to reach "X marks the spot." If a mistake occurs early, such as a wrong step or misunderstanding the terrain, the rigid approach can lead the model astray.
+Token-based Large Language Models (LLMs) would approach this problem by learning the probable direction before having arrived at the island and then taking each step rigidly, one at a time—placing one foot in front of the other and hoping to reach "X marks the spot." If a mistake occurs early, such as a wrong step or misunderstanding the terrain, the rigid approach can lead the model astray.
 
 Now imagine a different approach: instead of blindly following footsteps, you’re equipped with a compass that points to the treasure, no matter where you are on the island. You can adapt, explore, and navigate creatively, knowing the compass aligns you with your ultimate destination. This is how target embeddings work in Large Concept Models (LCMs)—guiding the reasoning process toward the desired output while allowing flexibility along the way.
 
