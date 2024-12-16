@@ -1,15 +1,12 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Tim"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+I am an innovative full stack data scientist / machine learning engineer specialising in developing autonomous, user-driven AI systems. Currently spearheading generative AI initiatives at [Shutterstock](https://www.shutterstock.com), where I architect prompt safety frameworks, optimize model interactions, and pioneer intelligent routing systems that match user prompts to the most appropriate AI models. My work combines technical expertise with a focus on creating robust, self-improving systems that enhance user experience and operational efficiency.
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+I aim to post here regularly, but post whenever life allows
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+feel free to reach out at tim@timajwilliams.com - or correct my posts by submitting a pr on [my github blog](https://github.com/timajwilliams/timajwilliams.github.io)
