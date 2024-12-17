@@ -32,7 +32,7 @@ By releasing pretrained SAEs for Gemma 2 models:
 
 The Gemma Scope team trained their SAEs using the JumpReLU activation function, a variant that thresholds activations while preserving sparsity. Compared to older methods like Top-K or L1-regularized SAEs, JumpReLU strikes a careful balance between reconstruction fidelity and activation sparsity.
 
-JumpReLU also allows for a variable number of active features, unlike Top-K approaches which enforce a fixed number of active latents. This flexibility makes JumpReLU particularly powerful when modeling activations where the number of meaningful features changes dynamically across inputs.
+JumpReLU also allows for a variable number of active features, unlike Top-K approaches which enforce a fixed number of active dimensions. This flexibility makes JumpReLU particularly powerful when modeling activations where the number of meaningful features changes dynamically across inputs.
 
 To better illustrate how SAEs work, let’s look at the following diagram:
 
@@ -92,3 +92,5 @@ Gemma Scope is more than just a set of pretrained autoencoders—it’s a *miles
 For researchers, the possibilities are endless: dive into the weights, analyze the latents, and help us all better understand the strange, beautiful, and superposed world of neural networks. Interpretability is hard, but with tools like Gemma Scope, it just got a little easier.
 
 You can start experimenting today: [Check out the models](https://huggingface.co/google/gemma-scope) and [explore the demo](https://neuronpedia.org/gemma-scope).
+
+The [demo at neuronpedia](https://neuronpedia.org/gemma-scope) is awesome - the latent dimensions have been labelled by llm so you can see the utility of tools like these against your own inputs.
