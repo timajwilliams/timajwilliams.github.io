@@ -51,15 +51,15 @@ The size of the sparse latent feature must naturally be much larger than the inp
 
 
 
-### SAE
+### Sparse Autoencoder - SAE
 ![relu diagram](/assets/images/relu.png){: .img-left style="width: 100px;"}
-The JumpReLU means the SAE can only have positive values ![sae latent diagram](/assets/images/sae_features.png){: .img-right style="width: 300px;"} 
+The JumpReLU means the SAE can only have positive values, the 'jump' part comes from the Heaviside step fuction, such that it is not just any value above 0, but that for each dimension a threshold is learned above which the value is passed through, otherwise it is set as zero. ![sae latent diagram](/assets/images/sae_features.png){: .img-right style="width: 300px;"} 
 
 Dimensions identified are effectively binary, so for a feature such as happiness, we need 2 dimensions, both starting at zero or neutral, but then increasing for both happy and sad. One would expect that these dimensions are mutually exclusive - they both cannot be positive at the same time. Explainability can be effected in a pretty blunt force way here - which inputs cause each dimension to be activeated highes? Collect enough examples for each dimension, and you can have an LLM just descrive the common feature to each input.
 
 SAE latent simension compression is in opposition to the type of dimensions encoded by for example a Variational Autoencoder (VAE)
 
-### VAE
+### Variational Autoencoder VAE
 ![norm diagram](/assets/images/norm.png){: .img-left style="width: 100px;"}
 The feature space for a variational autoencoder is bottlenecked - smaller in dimensionality than the input feature space. This acts as a great way to allow compression, and also has been used widely in the generative image space.
 ![vae latent diagram](/assets/images/vae_features.png){: .img-right style="width: 300px;"} 
