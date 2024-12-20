@@ -17,7 +17,7 @@ The GPT, decoder only, model proved to be pretty useful (sources needed) at text
 Since then BERT and the variants of the BERT architecture have been running the show in the transfer learning space.
 The LLM world has progressed in leaps and bounds, and now LLMs that require some grounding in fact at test time are still relying on BERT based models to ensure they have the right context readily available at aiding their generation. [ColBERT](https://arxiv.org/abs/2004.12832) is one of the most popular current models for the "R" in "RAG" or **R**etrieval **A**ugmented **G**eneration.
 
-As I write this, the [Bert Base Uncased](https://huggingface.co/google-bert/bert-base-uncased) model is the second most popular model downloaded from Huggingface, having over 64 million downloads in the last month. 6 in the top 20 are BERT varinants.
+As I write this, the [Bert Base Uncased](https://huggingface.co/google-bert/bert-base-uncased) model is the second most popular model downloaded from Huggingface, having over 64 million downloads in the last month. 6 in the top 20 are BERT variants.
 
 But here's the thing: most of these BERT variants are still running on architectures that haven't changed much since BERT's release in 2019. While LLMs have rapidly evolved with improvements like rotary embeddings, flash attention, and better activation functions, encoder models have largely stayed frozen in time.
 
