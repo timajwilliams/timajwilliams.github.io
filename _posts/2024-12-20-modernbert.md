@@ -21,7 +21,7 @@ As I write this, the [Bert Base Uncased](https://huggingface.co/google-bert/bert
 
 But here's the thing: most of these BERT variants are still running on architectures that haven't changed much since BERT's release in 2019. While LLMs have rapidly evolved with improvements like rotary embeddings, flash attention, and better activation functions, encoder models have largely stayed frozen in time.
 
-Enter ModernBERT: a complete modernization of encoder-only models that brings them firmly into 2024.
+Enter ModernBERT: a complete modernization of encoder-only models that brings them firmly into 2024. Theyve even (I assume) given a nod to Daft Punk in the paper title: ["Smarter, Better, Faster, Longer"](https://arxiv.org/abs/2412.13663)
 
 ## What is ModernBERT?
 
@@ -52,6 +52,8 @@ ModernBERT isn't just better – it's significantly faster. The models process t
 For example, ModernBERT-base can process batches twice as large as any other base-sized encoder on both short and long contexts, while maintaining higher throughput.
 
 ### 2. Strong Performance Across the Board
+
+![ModernBert Pareto Efficiency Curve. Source: https://huggingface.co/blog/modernbert](/assets/images/modernbert_pareto.png){: .img-right}
 
 ModernBERT sets new state-of-the-art results for encoder models across a wide range of tasks:
 
@@ -90,5 +92,5 @@ ModernBERT represents a big jump forward for encoder models, showing that there'
 
 For practitioners, ModernBERT offers a compelling upgrade path: better performance across the board, significantly improved efficiency, and long-context capability, all while maintaining backward compatibility with existing BERT-style workflows.
 
-The models are open source and available today, along with the FlexBERT framework that enables easy experimentation with the architecture. You can start exploring at [github.com/AnswerDotAI/ModernBERT](https://github.com/AnswerDotAI/ModernBERT).
+The models are open source and available, along with the FlexBERT framework that enables easy experimentation with the architecture. You can start exploring at [github.com/AnswerDotAI/ModernBERT](https://github.com/AnswerDotAI/ModernBERT).
 
