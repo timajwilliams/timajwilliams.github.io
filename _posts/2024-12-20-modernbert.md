@@ -10,7 +10,8 @@ A Much-Needed Update to an ML Workhorse
 
 # ModernBERT: Bringing BERT into the Modern Era
 
-When I joined the data science world, embeddings in NLP were all the rage. [Word2Vec](https://arxiv.org/abs/1301.3781) was widely used for transfer learning tasks. Newer architectures had allowed models at the time like [ELMo (Embeddings from Language Models)](https://arxiv.org/abs/1802.05365) which used bi-LSTMs to improve on the contextual representation - allowing for example the polysemic words like 'bank' or 'play' to be disambiguated depending on their surrounding context. At the time I joined, the transformer had just been [released](https://arxiv.org/abs/1706.03762) and a few folks were seeing some benefits in applying it to language modelling tasks [GPT](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf), [BERT](https://arxiv.org/abs/1810.04805). 
+![ModernBert Pareto Efficiency Curve. Source: https://huggingface.co/blog/modernbert](/assets/images/future-bert.webp){: .img-right style="width:350px;"}
+When I joined the data science world, embeddings in NLP were all the rage. [Word2Vec](https://arxiv.org/abs/1301.3781) was widely used for transfer learning tasks. Newer architectures had allowed models at the time like [ELMo (Embeddings from Language Models)](https://arxiv.org/abs/1802.05365) which used bi-LSTMs to improve on the contextual representation - allowing for example the polysemic words like 'bank' or 'play' to be disambiguated depending on their surrounding context. At the time I joined, the transformer had just been [released](https://arxiv.org/abs/1706.03762) and a few folks: [GPT](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf), [BERT](https://arxiv.org/abs/1810.04805) were seeing some benefits in applying it to language modelling tasks.
 
 The GPT, decoder only, model proved to be pretty useful (sources needed) at text generation tasks - We seem to have moved over to calling them LLMs or **L**arge **L**anguage **M**odels, now but I'm not really sure exactly when that happened - I guess this is strategic branding by foundation model companies away from the GPT terminology that OpenAI have so closed in on. 
 
@@ -54,6 +55,7 @@ For example, ModernBERT-base can process batches twice as large as any other bas
 ### 2. Strong Performance Across the Board
 
 ![ModernBert Pareto Efficiency Curve. Source: https://huggingface.co/blog/modernbert](/assets/images/modernbert_pareto.png){: .img-right}
+
 
 ModernBERT sets new state-of-the-art results for encoder models across a wide range of tasks:
 
