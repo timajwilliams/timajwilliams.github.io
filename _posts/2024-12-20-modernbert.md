@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mordern BERT"
+title: "Modern BERT"
 author: "Tim"
 tags: NLP BERT Transfer-Learning
 excerpt_separator: <!--more-->
@@ -26,7 +26,7 @@ Enter ModernBERT: a complete modernization of encoder-only models that brings th
 
 ## What is ModernBERT?
 
-ModernBERT is a new family of encoder models that modernizes the BERT architecture by incorporating the best improvements developed for LLMs over the past five years. But it's not just about adding fancy new components – ModernBERT was designed from the ground up with three key principles in mind:
+ModernBERT is a new family of encoder models that modernizes the BERT architecture by incorporating the best improvements developed for LLMs over the past five years. But it's not just about adding fancy new components. ModernBERT was designed from the ground up with three key principles in mind:
 
 1. **Modern Architecture**: Incorporating proven improvements like rotary positional embeddings (RoPE), GeGLU activations, and flash attention
 2. **Efficiency First**: Designed to run blazingly fast on common GPUs through careful hardware-aware optimization
@@ -44,7 +44,7 @@ There are three key reasons why ModernBERT represents a major step forward:
 
 ### 1. Unmatched Efficiency
 
-ModernBERT isn't just better – it's significantly faster. The models process tokens almost twice as fast as other recent encoders, while using notably less memory. This is achieved through careful architectural choices like:
+ModernBERT isn't just better, it's significantly faster. The models process tokens almost twice as fast as other recent encoders, while using notably less memory. This is achieved through careful architectural choices like:
 
 - Alternating between global and local attention (every third layer uses global attention)
 - Whole-model unpadding that removes the compute waste from padding tokens
