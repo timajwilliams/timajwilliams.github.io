@@ -6,6 +6,7 @@ excerpt_separator: <!--more-->
 ---
 Multimodal understanding and generation from the same models.
 
+<!--more-->
 # Janus
 
 Its October 2024. Towards the end of a slow year for AI. Can you imagine?
