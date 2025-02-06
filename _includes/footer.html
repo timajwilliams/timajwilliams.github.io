@@ -19,34 +19,56 @@
           line.style.borderTopColor = getRandomColor();
       });
 
-      // Match SVGs within tags-item elements
       const tagIcons = document.querySelectorAll('.tags-item svg');
       tagIcons.forEach(icon => {
           icon.style.stroke = getRandomColor();
       });
-
-    
   }
-  document.addEventListener('DOMContentLoaded', () => {
-  // Updated selector to target h1s that don't have post-title class
-  const headings = document.querySelectorAll('.post h1:not(.post-title), .post h2, .post h3, .post h4, .post h5, .post h6');
-  headings.forEach(heading => {
-    // Wrap the text content in a span
-    const textContent = heading.textContent;
-    heading.innerHTML = `<span>${textContent}</span>`;
-    
-    // Apply annotation to the span instead of the heading
-    const annotation = RoughNotation.annotate(heading.querySelector('span'), {
-      type: 'underline',
-      color: getRandomColor(),
-      multiline: true,
-      padding: 2,
-      strokeWidth: 3,
-      animate: false
-    });
-    annotation.show();
-  });
-});
 
-  document.addEventListener('DOMContentLoaded', applyRandomColors);
+  // Wait for Twitter embeds to load before applying annotations
+  function initializeAnnotations() {
+    const headings = document.querySelectorAll('.post h1:not(.post-title), .post h2, .post h3, .post h4, .post h5, .post h6');
+    
+    // Function to apply annotations
+    function applyAnnotations() {
+      headings.forEach(heading => {
+        const textContent = heading.textContent;
+        heading.innerHTML = `<span>${textContent}</span>`;
+        
+        const annotation = RoughNotation.annotate(heading.querySelector('span'), {
+          type: 'underline',
+          color: getRandomColor(),
+          multiline: true,
+          padding: 2,
+          strokeWidth: 3,
+          animate: false
+        });
+        annotation.show();
+      });
+    }
+
+    // Check if Twitter widgets are present
+    if (document.querySelector('.twitter-tweet')) {
+      // Wait for Twitter widgets to load
+      if (window.twttr) {
+        twttr.ready(function (twttr) {
+          twttr.events.bind('rendered', function () {
+            // Small delay to ensure widget is fully rendered
+            setTimeout(applyAnnotations, 100);
+          });
+        });
+      } else {
+        // Fallback if Twitter widgets don't load
+        setTimeout(applyAnnotations, 1000);
+      }
+    } else {
+      // No Twitter widgets, apply immediately
+      applyAnnotations();
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    applyRandomColors();
+    initializeAnnotations();
+  });
 </script>
