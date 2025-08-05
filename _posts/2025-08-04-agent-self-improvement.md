@@ -13,17 +13,22 @@ A comprehensive look at how AI systems are learning to improve themselves
 species that survives is the one that is able best to adapt and adjust to the changing environment in
 which it finds itself."  - Charles Darwin
 
-Survey Paper on self improving agents.
+
+
 
 # Self-Evolving Agents: The Next Phase of AI Development
 
-*[A comprehensive look at how AI systems are learning to improve themselves](https://arxiv.org/pdf/2507.21046)*
+*[A comprehensive review of self-evolving agents](https://arxiv.org/pdf/2507.21046)*
 
-This survey paper is a really interesting read, and deserves a little TL;DR-ifying to capture the key parts
+This survey paper is a really interesting read and deserves a little TL;DR-ifying to capture the key parts
 
 ## The Core Framework: What, When, and How
 
-The researchers organise self-evolving agents around three fundamental questions that capture the essence of autonomous improvement:
+As LLMs have been deployed in agentic patterns over many open ended tasks, a newer paradigm of agent has become necessary where previous static tooling such as RAG for knowledge retrieval have become bottlenecks in the completion of tasks. In order for agents to improve over time, they must be able to adapt to novel and evolving contexts becoming more robust, versatile, and capable of tackling complex, dynamic real-world problems.
+
+After formally defining envrionment, agent systems, self evolution strategy and the objective of self evolving agents, the researchers organise the paper around around three core questions central to autonomous improvement: "What aspects of an agent should evolve? When should adaptation occur? And how should that evolution be implemented in practice?"
+
+The authors have alsoo helpfully linked all cited papers in their [GitHub Repo](https://github.com/CharlesQ9/Self-Evolving-Agents?tab=readme-ov-file) 
 
 ## What Can Evolve? (Four Core Components)
 
@@ -31,9 +36,9 @@ The researchers organise self-evolving agents around three fundamental questions
 The most direct form of evolution involves the agent's core reasoning capabilities. Rather than relying on expensive human-annotated training data, these systems employ clever self-play mechanisms. In one approach called SCA (Self-Correcting Agents), the model alternates between two roles: a "Challenger" that generates complex coding problems and an "Executor" that solves them. Successful solutions become training data, creating a self-improvement loop that's both cost-effective and targeted to areas where the model struggles.
 
 ### 2. Context - Memory and Prompt Optimisation
-Context evolution operates on two levels. **Memory evolution** asks "how should we store, forget, and retrieve past experiences to stay informed?" Advanced systems like Mem0 implement sophisticated pipelines that extract key facts from recent interactions and decide whether to ADD new knowledge, MERGE redundant information, or DELETE contradictions.
+Context evolution operates on two levels. **Memory evolution** asks "how should we store, forget, and retrieve past experiences to stay informed?" Advanced systems like [Mem0](https://arxiv.org/abs/2504.19413) implement pipelines that extract key facts from recent interactions and decide whether to ADD new knowledge, MERGE redundant information, or DELETE contradictions.
 
-**Prompt optimisation** focuses on "how can we phrase instructions so the LLM behaves better?" Frameworks like DSPy treat entire workflows as graphs where sub-prompts are jointly optimised for global objectives.
+**Prompt optimisation** focuses on "how can we phrase instructions so the LLM behaves better?" Frameworks like DSPy treat entire workflows as graphs where sub-prompts are jointly optimised over global objectives.
 
 ### 3. Tools - From User to Creator
 Agents are transitioning from being just tool users to autonomous tool makers. This progression is explored along three axes:
@@ -43,7 +48,7 @@ Agents are transitioning from being just tool users to autonomous tool makers. T
 - **Management**: As tool libraries grow into the hundreds or thousands, agents must efficiently select and compose tools for complex multi-step problems
 
 ### 4. Architecture: System-Level Optimisation
-Both single-agent and multi-agent systems can evolve their fundamental structure. Single agents might use "textual gradients" to propagate feedback through complex workflows, while multi-agent systems automatically adapt their communication patterns and role assignments. Some cutting-edge systems like Darwin Gödel Machine allow agents to directly rewrite their own Python code.
+Both single-agent and multi-agent systems can evolve their fundamental structure. Single agents might use "textual gradients" to propagate feedback through complex workflows, while multi-agent systems automatically adapt their communication patterns and role assignments. Some cutting-edge systems like [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) allow agents to directly rewrite their own Python code.
 
 ## When Does Evolution Happen? (Two Temporal Modes)
 
@@ -135,3 +140,4 @@ Each node executes a policy function  that maps observations to action probabili
 **Taxonomy of related Papers**
 
 ![Agentic Papers](/assets/images/agent-taxonomy.png)
+[Links](https://github.com/CharlesQ9/Self-Evolving-Agents?tab=readme-ov-file)
