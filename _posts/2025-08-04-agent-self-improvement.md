@@ -116,15 +116,52 @@ Measuring self-evolving systems requires new metrics beyond traditional benchmar
 3. **Scalable**: Can generate unlimited training examples
 4. **Quality-controlled**: Only uses successful solutions for training
 
-**Environment**: Agent environment is a partially observable Markov Decision Process. formalisation captures the **complex, partially observable, goal-driven nature** of real-world agent environments, where:
+**Environment**: 
+Agent environment is a partially observable Markov Decision Process. formalisation captures the **complex, partially observable, goal-driven nature** of real-world agent environments, where:
 
-- Agents can't see everything (they have partial observability)
-- Multiple goals may exist simultaneously
-- Actions span reasoning, retrieval, and tool use
-- State transition is conditioned on prior (state, action) pairs
-- Feedback can be both numerical and linguistic, and is determined over (state, action, goal)
-- Observations by the agent are conditioned on prior (state, action) pairs 
-- Future consequences matter: immediate vs. long-term objectives (discounting)
+POMDP Components: Environment = (G, S, A, T, R, Ω, O, γ)
+
+**Goals (G)**: Set of task objectives the agent must achieve
+
+- Examples: User queries, specific problem-solving tasks
+- Each goal g ∈ G defines what success looks like
+
+**States (S)**: Internal environmental states
+
+- Represents the true state of the environment
+- Not directly observable by the agent (hence "partially observable")
+
+**Actions (A)**: Agent's available behaviors
+
+- **Textual reasoning** - Thinking and planning in natural language
+- **External knowledge retrieval** - Accessing databases, search engines
+- **Tool calls** - Using APIs, executing code, manipulating systems
+
+**Transition Function (T)**: State evolution dynamics
+
+- T(s'|s,a) = probability of reaching state s' from state s after action a
+- Models how the environment changes in response to agent actions
+
+**Reward Function (R)**: Goal-conditioned feedback mechanism
+
+- R(s,a,g) → scalar score or textual feedback
+- Conditions rewards on specific goals, enabling multi-objective learning
+- Can provide both numerical scores and natural language critiques
+
+**Observations (Ω)**: What the agent can perceive
+
+- Limited view of the true environment state
+- Forces agents to maintain internal models and handle uncertainty
+
+**Observation Function (O)**: Perception dynamics
+
+- O(o'|s,a) = probability of observing o' given state s and action a
+- Probability distribution over next observation 
+
+**Discount Factor (γ)**: Future reward weighting
+
+- Balances immediate vs. long-term objectives (temporal credit assigment)
+
 
 **Agent Architecture**
 
