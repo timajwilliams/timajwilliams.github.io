@@ -178,3 +178,6 @@ Each node executes a policy function  that maps observations to action probabili
 
 ![Agentic Papers](/assets/images/agent-taxonomy.png)
 [Links](https://github.com/CharlesQ9/Self-Evolving-Agents?tab=readme-ov-file)
+
+
+**The overarching objective in designing a self-evolving agent is to construct a strategy such that the cumulative utility over tasks is maximized**
