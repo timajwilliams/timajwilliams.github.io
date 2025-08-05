@@ -139,7 +139,7 @@ POMDP Components: Environment = (G, S, A, T, R, Ω, O, γ)
 
 **Transition Function (T)**: State evolution dynamics
 
-- T(s'|s,a) = probability of reaching state s' from state s after action a
+- T (s'|s,a) = probability of reaching state s' from state s after action a
 - Models how the environment changes in response to agent actions
 
 **Reward Function (R)**: Goal-conditioned feedback mechanism
@@ -155,7 +155,7 @@ POMDP Components: Environment = (G, S, A, T, R, Ω, O, γ)
 
 **Observation Function (O)**: Perception dynamics
 
-- O(o'|s,a) = probability of observing o' given state s and action a
+- O (o'|s,a) = probability of observing o' given state s and action a
 - Probability distribution over next observation 
 
 **Discount Factor (γ)**: Future reward weighting
