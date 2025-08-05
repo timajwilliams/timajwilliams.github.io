@@ -9,9 +9,9 @@ A comprehensive look at how AI systems are learning to improve themselves
 
 <!--more-->
 
-"It is not the most intellectual of the species that survives; it is not the strongest that survives; but the
+> "It is not the most intellectual of the species that survives; it is not the strongest that survives; but the
 species that survives is the one that is able best to adapt and adjust to the changing environment in
-which it finds itself."  - Charles Darwin
+which it finds itself."  - <cite>Charles Darwin</cite>
 
 
 
