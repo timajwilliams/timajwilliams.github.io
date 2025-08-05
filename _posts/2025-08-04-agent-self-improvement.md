@@ -89,13 +89,13 @@ Measuring self-evolving systems requires new metrics beyond traditional benchmar
 
 **Five Core Metrics:**
 
-![Evaluation Categories](/assets/images/agent-metrics.png)
-
 1. **Adaptivity**: improvement on in domain tasks through experience: Success Rate by iteration Steps
 2. **Retention**: observing that new knowledge learned does not have deleterious consequence on previously successful tasks through 'forgetting' Measured in accuracy delta on old tasks after acquisition of new skill
 3. **Generalisation**:  The application of in domain knowledge to out of domain tasks
 4. **Efficiency**: Cost, speed, number of turns, number of required tool interactions in order to complete given tasks
 5. **Safety**: Adherence to predetermined safety guiderails and propensity for harmful action measured over time.
+
+![Evaluation Categories](/assets/images/agent-metrics.png)
 
 **Three Assessment Approaches:**
 - **Static assessment**: Traditional snapshot performance
