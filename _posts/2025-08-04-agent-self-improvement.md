@@ -5,7 +5,7 @@ author: "Tim"
 tags: Agent Improvement
 excerpt_separator: <!--more-->
 ---
-
+A comprehensive look at how AI systems are learning to improve themselves
 
 <!--more-->
 
