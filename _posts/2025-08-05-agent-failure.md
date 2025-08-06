@@ -11,7 +11,7 @@ MAST (Multi-Agent System FailureTaxonomy)
 
 # Why Do Multi Agent LLM Systems Fail
 
-An [useful paper](https://arxiv.org/abs/2503.13657) that captures a taxonomy of failure cases in agent systems, specifically where multiple agents are involved. My key take home here, beyond the useful taxonomy is the observation that a strong verifier can improve outcomes, but a verifier alone is not sufficient. In combination with an LLM as a judge, the taxonomy makes the identification of failure cases over full conversational traces much easier for developers to diagnose and correct. 
+A [useful paper](https://arxiv.org/abs/2503.13657) that captures a taxonomy of failure cases in agent systems, specifically where multiple agents are involved. My key take home here, beyond the useful taxonomy is the observation that a strong verifier can improve outcomes, but a verifier alone is not sufficient. In combination with an LLM as a judge, the taxonomy makes the identification of failure cases over full conversational traces much easier for developers to diagnose and correct. 
 
 ![MAST Taxonomy](/assets/images/mast-taxonomy.png)
 _If a failure mode spans multiple stages, it means the issue involves or can occur at
