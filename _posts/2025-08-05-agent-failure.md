@@ -5,7 +5,7 @@ author: "Tim"
 tags: Agent Improvement Failure
 excerpt_separator: <!--more-->
 ---
-MAST (Multi-Agent System FailureTaxonomy)
+MAST (Multi-Agent System Failure Taxonomy)
 
 <!--more-->
 
