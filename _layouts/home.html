@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<div class="catalogue">
-  {% for post in site.posts %}
-    {% if post.sticky %}
-      {% include catalogue_item.html sticky='true' %}
-    {% endif %}
-  {% endfor %}
+{% include about.html %}
 
-  {% for post in paginator.posts %}
-    {% include catalogue_item.html %}
-  {% endfor %}
-</div>
+<h2 class="posts-header">Posts</h2>
+
+{% for post in site.posts %}
+  {% if post.sticky %}
+    {% include catalogue_item.html sticky='true' %}
+  {% endif %}
+{% endfor %}
+
+{% for post in paginator.posts %}
+  {% include catalogue_item.html %}
+{% endfor %}
 
 <div class="pagination">
   {% if paginator.previous_page %}
