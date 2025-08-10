@@ -1,19 +1,27 @@
-<a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-  <div>
-    {% if include.sticky == 'true' %}
-    <span class="catalogue-pinned">Pinned &middot;</span>
-    {% endif %}
-    <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-    <h1 class="catalogue-title">{{ post.title }}</h1>
-    <div class="catalogue-line"></div>
+<div class="catalogue-item">
+  <div class="timeline">
+    <time datetime="{{ post.date }}" class="timeline-date">{{ post.date | date: "%B %d, %Y" }}</time>
+    <div class="timeline-marker"></div>
+  </div>
+  <div class="catalogue-content">
 
-    <p>
+    <h1 class="catalogue-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+    <div class="catalogue-line"></div>
+    <div class="excerpt">
       {% if post.excerpt_separator %}
         {{ post.excerpt | strip_html }}
       {% else %}
         {{ post.content | strip_html | truncatewords: 30 }}
       {% endif %}
-    </p>
+    </div>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read More</a>
+    <div class="post-tags tags-clouds">
+      {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tags#{{ tag | cgi_escape }}" class="tag-link">#{{ tag }}</a>
+      {% endfor %}
+    </div>
 
   </div>
-</a>
+</div>

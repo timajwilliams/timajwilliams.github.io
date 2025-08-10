@@ -1,75 +1,142 @@
 @import 'colors';
 
-.catalogue {
-  margin-top: 2rem;
+.catalogue-item {
+  display: flex;
+  position: relative;
+  padding-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 
-  &-item {
-    background-color: var(--card-background-color);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: var(--shadow-small);
-    color: $default-color;
-    display: block;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    transition: all 0.3s ease-in-out;
-
-    &:hover,
-    &:focus {
-      box-shadow: var(--shadow-large);
-      transform: translateY(-5px);
-
-      .catalogue-line {
-        width: 10rem;
-      }
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  &-pinned {
-    color: $default-tint;
-    font-family: $serif-secondary;
-    letter-spacing: .5px;
-  }
-  &-time {
-    color: $default-tint;
-    font-family: $serif-secondary;
-    letter-spacing: .5px;
-  }
-  &-title {
-    color: var(--heading-color);
-    display: block;
-    font-family: $sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: .5rem 0;
-  }
-  &-line {
-    @include transition(all .3s ease-out);
-    border: none;
-    height: 0.2rem;
-    background-image: linear-gradient(to right, var(--line-color), transparent);
-    display: block;
-    width: 6rem;
-  }
-  
-  // New styles for color alternation
-  &-item:nth-child(4n+1) {
-    --line-color: var(--color-1);
-    border-color: var(--color-1);
-  }
-  &-item:nth-child(4n+2) {
-    --line-color: var(--color-2);
+  &:hover .timeline-marker {
+    background-color: var(--color-2);
     border-color: var(--color-2);
   }
-  &-item:nth-child(4n+3) {
-    --line-color: var(--color-3);
-    border-color: var(--color-3);
+
+  &:last-child {
+    padding-bottom: 0;
   }
-  &-item:nth-child(4n+4) {
-    --line-color: var(--color-4);
-    border-color: var(--color-4);
+  
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  flex-shrink: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--border-color);
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-date {
+  font-family: $serif-primary;
+  color: var(--default-tint);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.timeline-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  z-index: 1;
+}
+
+.catalogue-content {
+  padding-left: 2rem;
+  flex-grow: 1;
+
+  .post-tags {
+    margin-top: 0.5rem;
+    text-align: right;
+  }
+}
+
+.catalogue-line {
+  @include transition(all .3s ease-out);
+  border: none;
+  height: 0.2rem;
+  background-image: linear-gradient(to right, var(--line-color), transparent);
+  display: block;
+  width: 6rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.catalogue-item:hover .catalogue-line {
+  width: 10rem;
+}
+
+.tags {
+  margin-bottom: 0.5rem;
+}
+
+.tag-link {
+  font-family: $serif-primary;
+  font-size: 0.8rem;
+  color: var(--color-2);
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.catalogue-title {
+  margin: 0;
+}
+
+.catalogue-title a {
+  font-family: $serif-primary;
+  font-size: 1.8rem;
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.author-info {
+  font-family: $serif-secondary;
+  color: var(--default-tint);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+}
+
+.excerpt {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--default-color);
+  font-family: $sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--border-color);
+    color: var(--background-color);
   }
 }

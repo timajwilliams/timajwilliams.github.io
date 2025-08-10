@@ -16,7 +16,11 @@
   function applyRandomColors() {
       const lines = document.querySelectorAll('[class$="-line"]');
       lines.forEach(line => {
-          line.style.borderTopColor = getRandomColor();
+          if (line.classList.contains('catalogue-line')) {
+              line.style.setProperty('--line-color', getRandomColor());
+          } else {
+              line.style.borderTopColor = getRandomColor();
+          }
       });
 
       const tagIcons = document.querySelectorAll('.tags-item svg');
