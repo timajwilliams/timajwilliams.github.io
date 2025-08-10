@@ -1,17 +1,31 @@
 @import 'colors';
 
 .catalogue {
+  margin-top: 2rem;
+
   &-item {
-    border-bottom: 1px solid $grey-2;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-small);
     color: $default-color;
     display: block;
-    padding: 2rem 0;
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 10rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--shadow-large);
+      transform: translateY(-5px);
+
+      .catalogue-line {
+        width: 10rem;
+      }
     }
+
     &:last-child {
-      border: 0;
+      margin-bottom: 0;
     }
   }
   &-pinned {
@@ -34,22 +48,28 @@
   }
   &-line {
     @include transition(all .3s ease-out);
-    border-top: .2rem solid;
+    border: none;
+    height: 0.2rem;
+    background-image: linear-gradient(to right, var(--line-color), transparent);
     display: block;
     width: 6rem;
   }
   
   // New styles for color alternation
-  &-item:nth-child(4n+1) .catalogue-line {
-    border-top-color: $color-1;
+  &-item:nth-child(4n+1) {
+    --line-color: var(--color-1);
+    border-color: var(--color-1);
   }
-  &-item:nth-child(4n+2) .catalogue-line {
-    border-top-color: $color-2;
+  &-item:nth-child(4n+2) {
+    --line-color: var(--color-2);
+    border-color: var(--color-2);
   }
-  &-item:nth-child(4n+3) .catalogue-line {
-    border-top-color: $color-3;
+  &-item:nth-child(4n+3) {
+    --line-color: var(--color-3);
+    border-color: var(--color-3);
   }
-  &-item:nth-child(4n+4) .catalogue-line {
-    border-top-color: $color-4;
+  &-item:nth-child(4n+4) {
+    --line-color: var(--color-4);
+    border-color: var(--color-4);
   }
 }

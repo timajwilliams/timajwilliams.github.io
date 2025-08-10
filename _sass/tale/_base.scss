@@ -4,7 +4,7 @@
 }
 
 :root {
-  --background-color: #ffffff;
+  --background-color: var(--base-color);
   --heading-color: #e0e0e0;
   --text-color: #222222;
   --default-color: #555;
