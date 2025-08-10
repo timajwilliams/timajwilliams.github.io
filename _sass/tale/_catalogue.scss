@@ -140,3 +140,13 @@
     color: var(--background-color);
   }
 }
+
+@media (max-width: 600px) {
+  .timeline {
+    width: 10px;
+  }
+
+  .catalogue-content {
+    padding-left: 0.75rem;
+  }
+}
