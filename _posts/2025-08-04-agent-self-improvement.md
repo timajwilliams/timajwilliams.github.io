@@ -48,7 +48,7 @@ Agents are transitioning from being just tool users to autonomous tool makers. T
 - **Management**: As tool libraries grow into the hundreds or thousands, agents must efficiently select and compose tools for complex multi-step problems
 
 ### 4. Architecture: System-Level Optimisation
-Both single-agent and multi-agent systems can evolve their fundamental structure. Single agents might use "textual gradients" to propagate feedback through complex workflows, while multi-agent systems automatically adapt their communication patterns and role assignments. Some cutting-edge systems like [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) allow agents to directly rewrite their own Python code.
+Both single-agent and multi-agent systems can evolve their fundamental structure. Single agents might use "textual gradients" to propagate feedback through complex workflows, while multi-agent systems automatically adapt their communication patterns and role assignments. Some cutting-edge systems like [Darwin Gödel Machine](https://arxiv.org/pdf/2505.22954) allow agents to directly rewrite their own Python code.
 
 ## When Does Evolution Happen? (Two Temporal Modes)
 
