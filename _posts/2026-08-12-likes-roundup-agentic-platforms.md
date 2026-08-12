@@ -5,7 +5,7 @@ author: "Tim"
 tags: Agents Platforms Harness Evals Roundup
 excerpt_separator: <!--more-->
 ---
-What 1,100 likes say about where agent engineering actually is.
+What 180 likes say about where agent engineering actually is.
 <!--more-->
 
 I use my Twitter likes as bookmarks. Everything I think I might want to read again gets a like, and a little pipeline of mine ingests them, fetches the linked articles, and summarises them. This means that every so often I can interrogate my own taste.
