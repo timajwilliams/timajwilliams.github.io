@@ -22,11 +22,11 @@ Two other findings from the same post deserve more attention than they got. GLM 
 
 Composio piled on with [the same model through three harnesses on 28 identical tasks](https://x.com/composio/status/2082452269522378858): similar success rates, up to 30x difference in token cost. Vendor-reported, and they sell agent tooling, so take that with a pinch of salt..  but it points the same way as Databricks.
 
-Also filed under harnesses: [OpenAI's server-side compaction is quietly why Codex keeps going on long tasks](https://x.com/kunchenguid/status/2079824709240455241), and other harnesses don't inherit it; and a [deep dive on pi's minimalism](https://x.com/ShenSeanChen/status/2081118331097284801) - four tools, no MCP, a 792-line agent loop, on the grounds that one MCP server can mean tens of thousands of tokens of context for a tool you use a tenth of the time.
+Also filed under harnesses: [OpenAI's server-side compaction is quietly why Codex keeps going on long tasks](https://x.com/kunchenguid/status/2079824709240455241), and other harnesses don't inherit it; and a [deep dive on pi's minimalism](https://x.com/ShenSeanChen/status/2081118331097284801) - four tools, a 792-line agent loop, and no MCP on the grounds that one MCP server can mean tens of thousands of tokens of context for a tool you use a tenth of the time.
 
 ## Your repo is the training data
 
-Boris Cherny, who created Claude Code, posted [the most-quoted thread of my window](https://x.com/bcherny/status/2077460395279692197). The gist: the highest-leverage engineering work right now is encoding domain knowledge as infrastructure - CLAUDE.md files, skills, lint rules, CI checks - so that agents, and by extension new hires and non-specialists, can contribute on day one. His line that stuck with me: when a designer's PR gets rejected for not following architectural patterns, that's a failure of automation, not of the designer.
+Boris Cherny posted [the most-quoted thread of my window](https://x.com/bcherny/status/2077460395279692197). The gist: the highest-leverage engineering work right now is encoding domain knowledge as infrastructure - CLAUDE.md files, skills, lint rules, CI checks - so that agents, and by extension new hires and non-specialists, can contribute on day one. His line that stuck with me: when a designer's PR gets rejected for not following architectural patterns, that's a failure of automation, not of the designer.
 
 Practical corollaries I liked:
 
