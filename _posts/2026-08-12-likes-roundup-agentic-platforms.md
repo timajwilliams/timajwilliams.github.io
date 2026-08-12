@@ -12,7 +12,7 @@ I use my Twitter likes as bookmarks. Everything I think I might want to read aga
 
 This month I pulled the last four weeks of likes, around 180 tweets, and asked: what did I  think was worth keeping? Below is what came out, sifted into themes. 
 
-Despite the excitement about each newly released model, the chatter between releases has moved one layer out.
+Despite the excitement peaks at each newly released model, the Twitter chatter between releases has mostly been about one layer out.
 
 ## The harness is a business decision
 
