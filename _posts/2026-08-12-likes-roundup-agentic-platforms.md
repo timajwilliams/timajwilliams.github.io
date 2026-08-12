@@ -56,7 +56,7 @@ A concrete instance I liked: [AutoTrainess](https://x.com/VukRosic99/status/2074
 
 ## The platform layer is real now
 
-Perplexity published [how SPACE, the sandbox platform behind Computer, actually works](https://research.perplexity.ai/articles/making-space-secure-and-efficient-runtimes-for-long-running-agents) (Jul 15, verified, and worth reading properly). Per-sandbox VMs, btrfs copy-on-write clones, frequent disk snapshots plus less frequent full VM checkpoints shipped to object storage. Median sandbox creation went from 185ms to 60ms, p90 from 447ms to 89ms, on 100% of Computer's production traffic. Credentials live outside the sandbox entirely and are injected at the network layer.
+Perplexity published [how SPACE, the sandbox platform behind Computer, actually works](https://research.perplexity.ai/articles/making-space-secure-and-efficient-runtimes-for-long-running-agents)  (worth reading properly). Per-sandbox VMs, btrfs copy-on-write clones, frequent disk snapshots plus less frequent full VM checkpoints shipped to object storage. Median sandbox creation went from 185ms to 60ms, p90 from 447ms to 89ms, on 100% of Computer's production traffic. Credentials live outside the sandbox entirely and are injected at the network layer.
 
 Meanwhile [Kimi's paper apparently showed agents crashing container-isolated hosts via kernel panics](https://x.com/rauchg/status/2081842439304995169) - microVMs are the boundary that holds - and [@felipehuici](https://x.com/felipehuici/status/2083598787159691708) delivered my favourite sentence of the month: a great many warm pools are Kubernetes clusters kept warm to hide how slow the control plane is, a workaround for a workaround.
 
